@@ -1,15 +1,11 @@
 /* CSS Document */
-body{
-    background: white;
+h1 {text-align: center;
+color: red;
 }
-h1 {
-    color: red;
-    text-align: center;
-}
-h2 {
-    color: black;
-    text-align: center;
-}
-image {
-    
+#image-caption {text-align: center;}
+#tribute-info {text-align: center;}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
