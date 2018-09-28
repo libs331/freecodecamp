@@ -12,39 +12,72 @@
         <h1 id="title"> Sproutary Survey </h1>
         <p id="description"> Let us know how we can improve Sproutary.</p>
          <form id="survey-form">
-        <p> Name:
+
+    <div class="labels">
+    <label id="name-label" for="name">* Name: </label>
+    
         <input type="text" required placeholder="Enter Your Name" id="name">
-        </p>
+        </div>
 
-        <p>Email:
+        <div class="labels">
+            <label id="email-label" for="email">* Email: </label>
         <input type="email" required placeholder="Enter Your Email" id="email">
-        </p>
+        </div>
 
-        <p>Age:
+        <div class="labels">
+            <label id="number-label" for="age">* Age:</label>
             <input type="number" require placeholder="Age" id="number" min="1" max="125">
-        </p>
+        </div>
+        <br>
 
-        <p>How likely that you would recommend Sproutary to a friend?</p>
+<div class="labels">
+    <label for="currentPos">Which describes your role at your carecenter?</label>
+</div>
+    <select id="dropdown" name="currentPos" class="dropdown">
+            <option disabled value>Select an option</option>
+            <option  value="director">Director</option>
+            <option value="teacher">Teacher</option>
+            <option value="parent">Parent</option>
+            <option value="other">Other</option>
+            <option value="prefer">Prefer not to say"</option>
+
+    </select>
+
+
+        <div>
+            How likely that you would recommend Sproutary to a friend?
+            <br>
        <label for="recommend">
            <input id="recommend" type="radio" name="radio-buttons" value="1">Highly Likely
-       </label>
+       </label><br>
        <label for="recommend">
             <input id="recommend" type="radio" name="radio-buttons" value="2">Maybe
-        </label>
+        </label><br>
         <label for="recommend">
                 <input id="recommend" type="radio" name="radio-buttons" value="3">Unlikely
             </label>
+        </div>
+
             <p>Things that should be improved in the future (Check all that apply)
             </p>
             <label for="more-reports"><input id="more-reports" type="checkbox" name="improvements" value="1">More Reports</label><br>
-            <label for="auto-billing"><input id="auto-billing" type="checkbox" name="improvements" value="2">Auto Billing</label>
+            <label for="auto-billing"><input id="auto-billing" type="checkbox" name="improvements" value="2">Auto Billing</label><br>
 
         
+                  
+        <p>Additional Comments:</p>
+            <div class="textearea">
+            <div>
+            <label for="comments"></label>
+            <textarea id="comments" name="comments"></textarea>
+                </div>
+        </div>
+
 
        
 
 <br><br>
- <button type="submit">Submit</button>
+ <button id="submit" type="submit" >Submit</button>
 
 </form>
 </div>
